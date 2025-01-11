@@ -11,7 +11,7 @@
 
         1) Ordered List
         2) Un-ordered List
-        3) Data List
+        3) Description List
         4) Nested List
      -->
 
@@ -75,6 +75,174 @@
         <li>CSS</li>
         <li>JavaScript</li>
     </ol>
+
+
+    <!-- //////////////
+        Un-ordered List -
+        <ul> = ul-ordered list tag
+        <li> = list item tag
+        //////////////// -->
+
+    <!--
+    This attribute sets the bullet style for the list. The values defined under HTML3.2 and the transitional version of HTML 4.0/4.01 are:
+    circle
+    disc
+    square
+    -->
+
+    <ul type="circle">
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- //////////////
+        Description List -
+        <dl> = Description list tag
+        <dt> = Description title tag
+        <dd> = Description detail tag
+        //////////////// -->
+
+    <dl>
+        <dt>Frontend Technologies</dt>
+        <dd>HTML</dd>
+        <dd>CSS</dd>
+        <dd>JavaScript</dd>
+        <dd>React.js</dd>
+        <dd>Angular</dd>
+        <dd>Vue.js</dd>
+        <dd>Remix.js</dd>
+        <dt>Backend Technologies</dt>
+        <dd>Node.js</dd>
+        <dd>Express.js</dd>
+        <dd>MongoDB</dd>
+        <dd>Mongoose</dd>
+        <dd>Java</dd>
+        <dd>Spring</dd>
+        <dd>Spring Boot</dd>
+    </dl>
+
+    <!-- //////////////
+            Nested List
+            //////////////// -->
+
+    <ul>
+        <li>Java</li>
+        <li>Project Management</li>
+        <li>
+            Internet Technologies
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+        </li>
+        <li>
+            RAD
+            <ol>
+                <li>Node.js</li>
+                <li>React.js</li>
+                <li>React Native</li>
+            </ol>
+        </li>
+    </ul>
+
+
+
+
+    <!--//////////////////////// Task 01 ////////////////////////-->
+    <ol>
+    <li>Sri Lanka</li>
+    <li>
+        India
+        <ol start="5" type="a">
+            <li>
+                Western India
+                <ul>
+                    <li>Goa</li>
+                    <li>
+                        Gujarat
+                        <ul type="disc">
+                           <li>Area 1</li>
+                           <li>Area 2</li>
+                           <li>Area 3</li>
+                           <li>Area 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Eastern India</li>
+            <li>Northern India</li>
+            <li>
+                Southern India
+                <ul type="circle">
+                    <li>Kerala</li>
+                    <li>Chennai</li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+
+    <!--//////////////////////// Task 02 ////////////////////////-->
+    <ol>
+        <li>Sri Lanka</li>
+        <li>
+            India
+            <ol start="5" type="a">
+                <li>
+                    <u>Western India</u>
+                    <p>Welcome to <b>Western India</b></p>
+                    <ul>
+                        <li>
+                            Goa
+                            <p>Most <i>beautiful</i> area in the world.</p>
+                        </li>
+                        <li>
+                            Gujarat
+                            <ul type="disc">
+                                <li>Area 1</li>
+                                <li><mark>Area 2</mark></li>
+                                <li>Area 3</li>
+                                <li>Area 4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Eastern India</li>
+                <li>Northern India</li>
+                <li>
+                    Southern India
+                    <ul type="circle">
+                        <li>Kerala</li>
+                        <li><h1>Chennai</h1></li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
