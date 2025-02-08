@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <style>
+
+        /* -- Child Combinator -- */
+        /*section > h1 {*/
+        /*    color: red;*/
+        /*}*/
+
+        /* -- Decendent Combinator -- */
+        /*section h1 {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*h2+h3 {*/
+        /*    background: yellow;*/
+        /*}*/
+
+        h2~h3 {
+            background: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>Software Engineering</h1>
+
+<section>
+
+    <h1>Software Engineering Module 01</h1>
+
+    <div>
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+    </div>
+
+</section>
+
+<h2>Hello H2</h2>
+<h3>Hello H3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto, doloribus eaque impedit in iste natus, necessitatibus, perspiciatis quia ratione repudiandae voluptatum! Dolorem eos iusto minima nostrum omnis perferendis quisquam?</p>
+<div>
+    <h3>Hello H3 3</h3>
+</div>
+<h3>Hello H3 2</h3>
+
+
+</body>
+</html>

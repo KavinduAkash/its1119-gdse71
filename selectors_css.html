@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+    <style>
+
+        /*!*Type Selector*!*/
+        /*h1 {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*p {*/
+        /*    background: hotpink;*/
+        /*}*/
+
+        /*!*ID Selector*!*/
+        /*#special-topic {*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /*#special-topic-1 {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        /*#special-topic-2 {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        /*!*Class Selector*!*/
+        /*.my-topic {*/
+        /*    background-color: lightblue;*/
+        /*}*/
+
+        /*!*Universal Selector*!*/
+        /** {*/
+        /*    color: greenyellow;*/
+        /*}*/
+
+
+        /* -- Attribute selector with only attribute -- */
+
+        /*[name] {*/
+        /*    background-color: greenyellow;*/
+        /*}*/
+
+        /* -- Attribute selector with attribute + attribute_value (=) -- */
+
+        /*[name="name2"] {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*-- Attribute Selector with start value (^=) -- */
+
+        /*[href^="https"] {*/
+        /*    background-color: aqua;*/
+        /*}*/
+
+        /*[href^="http"] {*/
+        /*    background-color: aqua;*/
+        /*}*/
+
+        /*-- Attribute Selector with ending value  -- */
+
+        /*[href$="k"] {*/
+        /*    background-color: lightpink;*/
+        /*}*/
+
+        /*-- Attribute Selector with given value snippet --*/
+        /*[href*="ijse"] {*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /*!*-- Attribute Selector with given word --*!*/
+        /*[href~="ijse"] {*/
+        /*    background-color: orange;*/
+        /*}*/
+
+        /*!*-- Attribute Selector with other selector --*!*/
+        /*p[name] {*/
+        /*    background-color: green;*/
+        /*}*/
+
+
+        /*-- pseudo class selectors --*/
+
+        /*-- hover --*/
+        /*:hover {*/
+        /*    color: greenyellow;*/
+        /*}*/
+
+        /*h1:hover {*/
+        /*    color: greenyellow;*/
+        /*}*/
+
+        /*h1:active {*/
+        /*   color: skyblue; */
+        /*}*/
+
+
+        /*a:link {*/
+        /*    color: hotpink;*/
+        /*}*/
+
+        /*a:visited {*/
+        /*    color: aqua;*/
+        /*}*/
+
+        /*input:focus {*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /*-----------------------*/
+
+        /*li:first-child {*/
+        /*    color: lightgreen;*/
+        /*}*/
+
+        /*li:last-child {*/
+        /*    color: cornflowerblue;*/
+        /*}*/
+
+        /*li:nth-child(2) {*/
+        /*    color: mediumpurple;*/
+        /*}*/
+
+        /*li:nth-child(3) {*/
+        /*    color: orange;*/
+        /*}*/
+
+        /*li:nth-child(4) {*/
+        /*    color: yellow;*/
+        /*}*/
+
+        /*li:nth-last-child(2) {*/
+        /*    background-color: brown;*/
+        /*}*/
+
+        /*li:nth-child(odd) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /*li:nth-child(even) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /*li:nth-child(n+4) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /*li:nth-child(3n+1) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /*li:nth-child(3n-1) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+        /*li:nth-child(4n) {*/
+        /*    background-color: lightskyblue;*/
+        /*}*/
+
+
+        /*-- pseudo element selector --*/
+
+        /*h1::before {*/
+        /*    content: "😎";*/
+        /*}*/
+
+        /*h1::after {*/
+        /*    content: "😬";*/
+        /*}*/
+
+        /*h1::first-letter {*/
+        /*    color: orange;*/
+        /*}*/
+
+        /*p::first-line {*/
+        /*    color: blue;*/
+        /*}*/
+
+        /*p::selection {*/
+        /*    background: lightpink;*/
+        /*    color: red;*/
+        /*}*/
+
+        /*::marker {*/
+        /*    content: "💡";*/
+        /*}*/
+
+        /*input::placeholder {*/
+        /*    color: orange;*/
+        /*}*/
+
+        /*input::file-selector-button{*/
+        /*    background-color: lightpink;*/
+        /*}*/
+
+        /*input::file-selector-button:hover{*/
+        /*    background-color: lightgreen;*/
+        /*}*/
+
+        /*-- Grouping Selector --*/
+
+        h1,.my-item,#my-btn,p {
+            background: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!--<h1>Hello World! - 1</h1>-->
+<!--<p> welcome to my website </p>-->
+
+<!--<h1 class="my-topic">Hello World! - 2 </h1>-->
+<!--<p> welcome to my website </p>-->
+
+<!--<h1 id="special-topic">Hello World! - 3</h1>-->
+<!--<p> welcome to my website </p>-->
+
+<!--<h1 class="my-topic">Hello World! - 4</h1>-->
+<!--<p> welcome to my website </p>-->
+
+
+<!--<a href="https://ijse.lk">IJSE 1</a>-->
+<!--<a href="http://ijse.lk" name="name1">IJSE 2</a>-->
+<!--<a href="www.ijse.lk">IJSE 3</a>-->
+<!--<a href="https://ijse.com" name="name2">IJSE 4</a>-->
+<!--<a href="www.ijse.solutionsk">IJSE 5</a>-->
+<!--<a href="www.solutions.lk">IJSE 6</a>-->
+<!--<a href="www.googleijselankasolutions.net">IJSE 7</a>-->
+<!--<a href="www.google ijse lankasolutions.net">IJSE 8</a>-->
+
+<!--<p name="name2">Welcome to tech world 1</p>-->
+<!--<p>Welcome to tech world 2</p>-->
+
+
+
+<!--<h1>Hello World!</h1>-->
+
+<!--<a href="https://www.bolton.ac.uk/">UoBolton</a>-->
+<!--<a href="https://www.westminster.ac.uk/">UoWestminster</a>-->
+<!--<a href="https://www.cardiffmet.ac.uk/">CardiffMet</a>-->
+
+<!--<input type="text">-->
+
+<!--<ol>-->
+<!--    <li>Java</li>-->
+<!--    <li>GO</li>-->
+<!--    <li>.Net</li>-->
+<!--    <li>C++</li>-->
+<!--    <li>Python</li>-->
+<!--    <li>Pearl</li>-->
+<!--</ol>-->
+
+
+
+<h1>Welcome to IJSE!</h1>
+
+
+<ol>
+    <li>A</li>
+    <li class="my-item">B</li>
+    <li>C</li>
+    <li class="my-item">D</li>
+    <li>E</li>
+</ol>
+
+<input type="text" placeholder="Enter your name">
+<input type="file">
+<button id="my-btn">Click Me!</button>
+
+<p>
+    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempory.
+</p>
+
+
+
+
+
+
+<ol>
+    <li>
+        Backend
+        <ul>
+            <li>Java</li>
+            <li>GO</li>
+            <li>
+                Python
+                <ol>
+                    <li>Data Science</li>
+                    <li>AI</li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Frontend
+        <ol>
+            <li>HTML</li>
+            <li>
+                CSS
+                <ol>
+                    <li>Sass</li>
+                    <li>Less</li>
+                    <li>Tailwind CSS</li>
+                </ol>
+            </li>
+            <li>
+                JavaScript
+                <ul>
+                    <li>TypeScript</li>
+                </ul>
+            </li>
+            <li>
+                React
+                <ul>
+                    <li>
+                        Next.js
+                        <ol>
+                            <li>Next with TS</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>Angular</li>
+            <li>Vue</li>
+        </ol>
+    </li>
+</ol>
+
+
+
+</body>
+</html>
