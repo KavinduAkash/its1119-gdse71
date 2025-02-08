@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade</title>
+
+
+    <style>
+
+        /* X, X, X, X = 1000,100,10, 1 */
+
+        #my-id { /* 0, 1, 0, 0 */
+            color: skyblue;
+        }
+        button { /* 0, 0, 0, 1 */
+            color: red;
+        }
+
+        p { /* 0, 0, 0, 1 */
+            color: red;
+        }
+
+        section>p {
+            color: greenyellow;
+        }
+
+        section>.my-class { /* section -> 0, 0, 0, 1 | > -> 0, 0, 0, 0 | .my-class -> 0, 0, 1, 0 */
+            color: aqua;
+        }
+
+        #my-class-id { /* 0, 1, 0, 0 */
+            color: mediumpurple;
+        }
+
+        .my-class { /* 0, 0, 1, 0 */
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+
+<button id="my-id" style="color: yellow">Click!</button> <!-- 1, 0, 0, 0 -->
+
+<section>
+    <p class="my-class" id="my-class-id">Hello World!
+        lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+    </p>
+</section>
+
+</body>
+</html>
