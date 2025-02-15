@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Important in cascade</title>
+
+  <style>
+
+    #my_id { /* 0, 1, 0, 0 */
+      color: blue;
+    }
+
+    div { /* 0, 0, 0, 1 */
+      color: red!important;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div id="my_id">Hello World!</div>
+
+</body>
+</html>
