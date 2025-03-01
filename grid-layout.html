@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Layout</title>
+
+    <style>
+        section {
+            width: 1000px;
+            height: 500px;
+            border: 5px solid green;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr; !* fr = fragment *!*/
+            /*grid-template-rows: 1fr 1fr;*/
+
+            grid-template-columns: repeat(3, 1fr); /* fr = fragment */
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        section > div {
+            border: 1px solid red;
+            background: yellow;
+        }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>

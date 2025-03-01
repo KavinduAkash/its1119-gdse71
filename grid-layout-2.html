@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Layout</title>
+
+    <style>
+        section {
+            width: 1000px;
+            height: 500px;
+            border: 5px solid green;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr; !* fr = fragment *!*/
+            /*grid-template-rows: 1fr 1fr;*/
+
+            grid-template-columns: repeat(3, 1fr); /* fr = fragment */
+            /*grid-template-rows: repeat(2, 1fr);*/
+        }
+
+        section > div {
+            border: 5px solid darkblue;
+        }
+
+        section>div:first-child {
+            background: green;
+            /*grid-column: 1/4;*/
+            grid-row: 1/3;
+        }
+
+        section>div:nth-child(2) {
+            background: yellow;
+            grid-column: 2/4;
+        }
+
+        section>div:nth-child(3) {
+            background: red;
+        }
+
+        section>div:nth-child(4) {
+            background: green;
+        }
+
+        section>div:nth-child(5) {
+            background: purple;
+        }
+
+        section>div:nth-child(6) {
+            background: blue;
+        }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>
