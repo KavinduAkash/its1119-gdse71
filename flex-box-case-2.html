@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+
+    section {
+      height: 500px;
+      border: 2px solid orange;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    section>div {
+      width: 200px;
+      height: 200px;
+      background: lightpink;
+      border: 2px solid red;
+    }
+
+    section>div:nth-child(2) {
+      align-self: center;
+    }
+
+    section>div:nth-child(3) {
+      align-self: self-end;
+    }
+
+    section>div:nth-child(4) {
+      align-self: center;
+    }
+
+    section>div:nth-child(6) {
+      align-self: center;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+
+</body>
+</html>

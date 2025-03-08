@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Types</title>
+
+  <style>
+    /*
+        There are 2 types of elements
+            1. Block level elements
+            2. Inline level elements
+
+        Box types
+        ---------
+        1. Block
+        > Content is distributed as a block
+        > get 100% parent's width
+        > vertically
+        > box model applies
+        > h1 {display: block}
+
+        2. Inline
+        > Content is distributed as a line
+        > Only get content width
+        > horizontally - No line breaks
+        > No height and width (auto x auto)
+        > h1 {display: inline}
+
+        3. Inline-block
+        > a mix of block and inline
+        > Only get content width
+        > horizontally - No line breaks
+        > box model applies
+        > h1 {display: inline-block}
+        */
+
+    h1 {
+      display: inline;
+    }
+
+    a {
+      display: block;
+    }
+
+    h2 {
+      display: inline-block;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<h1>BOX01</h1>
+<h1>BOX02</h1>
+
+<a href="#">IJSE</a>
+<a href="#">LK</a>
+
+<h2>INLINEBLOCK01</h2>
+<h2>INLINEBLOCK02</h2>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flex Box => CSS New Layout</title>
+
+    <style>
+        section {
+            display: flex;
+            /*flex-direction: column; !* flex direction defines the direction of children inside the flex box *!*/
+            /*flex-direction: row; !* row => default flex direction *!*/
+            /*flex-direction: row-reverse;*/
+            flex-direction: column-reverse;
+        }
+
+        section > div {
+            border: 1px solid black;
+            margin: 2px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+</section>
+
+</body>
+</html>

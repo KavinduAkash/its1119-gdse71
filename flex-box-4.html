@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex box part 04</title>
+
+    <style>
+
+      section {
+        border: 5px solid black;
+        width: 1000px;
+        height: 400px;
+
+        display: flex;
+        /*align-items: center;*/
+      }
+
+      section > div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 5px solid pink;
+
+        /*align-self: self-start;*/
+        /*align-self: self-end;*/
+        /*align-self: center;*/
+      }
+
+      section>div:first-child {
+        align-self: self-end;
+      }
+
+      section>div:nth-child(2) {
+        align-self: center;
+      }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+  <div></div>
+  <div></div>
+</section>
+
+</body>
+</html>
