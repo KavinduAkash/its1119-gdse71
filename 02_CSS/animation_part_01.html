@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation</title>
+
+    <style>
+
+        div {
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: lightcyan;
+            border: 5px solid blue;
+
+            animation-name: my_rotate;
+            animation-duration: 3s;
+            /*animation-delay: 5s;*/
+
+            /*animation-iteration-count: 3;*/
+            animation-iteration-count: infinite;
+
+            animation-direction: alternate-reverse; /* normal, reverse, alternate, alternate-reverse */
+
+            animation-timing-function: ease-out; /* ease, liner, ease-in, ease-out, ease-in-out */
+        }
+
+        @keyframes my_rotate {
+            from {
+                /*transform: rotate(0deg);*/
+                background-color: lightcyan;
+            }
+            to {
+                /*transform: rotate(360deg);*/
+                background-color: lightcoral;
+                /*width: 300px;*/
+                margin-left: 1000px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

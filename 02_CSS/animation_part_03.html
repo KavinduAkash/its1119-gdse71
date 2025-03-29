@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Part 03</title>
+
+    <style>
+
+        :root {
+            --section-width: 700px;
+            --section-height: 600px;
+            --div-width: 100px;
+        }
+
+        section {
+            width: var(--section-width);
+            height: var(--section-height);
+            border: 2px solid black;
+        }
+
+        section>div {
+            width: var(--div-width);
+            aspect-ratio: 1/1;
+            background-color: red;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            0% {
+                margin: 0;
+                transform: rotate(0deg);
+            }
+            25% {
+                margin-left: calc(var(--section-width) - var(--div-width));
+                margin-top: 0;
+                transform: rotate(360deg);
+            }
+            50% {
+                margin-left: calc(var(--section-width) - var(--div-width));
+                margin-top: calc(var(--section-height) - var(--div-width));
+                transform: rotate(0deg);
+            }
+            75% {
+                margin-left: 0;
+                margin-top: calc(var(--section-height) - var(--div-width));
+                transform: rotate(360deg);
+            }
+            100% {
+                margin: 0;
+                transform: rotate(0deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>
