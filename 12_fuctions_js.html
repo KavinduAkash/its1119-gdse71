@@ -9,6 +9,8 @@
 
 <script>
 
+  // ////////////// Named Functions //////////////
+
   function myFunction() {
     // function body
     console.log("Welcome to functions!");
@@ -31,7 +33,20 @@
   let sum = myFunction3(100, 200);
   console.log(sum);
 
+  // /////////////////// Function Expressions ///////////////////
 
+  const myFunction4 = function() {
+    console.log("Welcome to Function Expressions");
+  }
+
+  myFunction4();
+
+  const myFunction5 = function(num1, num2) {
+    return num1+num2;
+  }
+
+  let myResult = myFunction5(6, 2);
+  console.log(myResult);
 
 </script>
 </body>
