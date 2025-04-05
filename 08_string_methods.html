@@ -62,7 +62,13 @@
     console.log(mystr.search("worldx")); // -1, No!, it doesn't
 
     str = "hello, world!";
+    // slice a special part of a string
     console.log(str.slice(7, 12)); // 'world'
+
+    str = "apple,mango,pineapple";
+    // split string by given value
+    console.log(str.split("")); // ['a', 'p', 'p', 'l', 'e', ',', 'm', 'a', 'n', 'g', 'o', ',', 'p', 'i', 'n', 'e', 'a', 'p', 'p', 'l', 'e']
+    console.log(str.split(",")); // ['apple', 'mango', 'pineapple']
 </script>
 
 </body>
