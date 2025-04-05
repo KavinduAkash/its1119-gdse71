@@ -52,6 +52,10 @@
     console.log(mystr.replace(",","/")); // 'A/B,C,D,E,F'
     console.log(mystr.replaceAll(",","/")); // 'A/B/C/D/E/F'
 
+    mystr = "hello, world";
+    // searching value parts
+    mystr.search("world"); // 7, yes! it has
+    mystr.search("worldx"); // -1, No!, it doesn't
 
 </script>
 
