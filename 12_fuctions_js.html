@@ -48,6 +48,27 @@
   let myResult = myFunction5(6, 2);
   console.log(myResult);
 
+  // /////////////////// Arrow Function ///////////////////
+
+  const myFunction6 = () => {
+    console.log("Welcome to Arrow Functions");
+  }
+
+  myFunction6();
+
+  const myFunction7 = (num1, num2, num3) => {
+    return num1 + num2 + num3;
+  }
+
+  let sum_results = myFunction7(1,2,3);
+  console.log(sum_results);
+
+  // /////////////////// Function Constructor ///////////////////
+
+  let myFunction8 = new Function("arg1", "arg2", "return arg1+arg2");
+  sum = myFunction8(30, 20);
+  console.log(sum);
+
 </script>
 </body>
 </html>
