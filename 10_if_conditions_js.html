@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    let x = 5;
+
+    if(x>2) {
+        console.log("Yes!");
+    } else {
+        console.log("No!");
+    }
+
+    // ---------------------
+
+    let marks = 56;
+
+    if(marks>=75) {
+        console.log("Grade: A");
+    } else if(marks>=65) {
+        console.log("Grade: B");
+    } else if(marks>=45) {
+        console.log("Grade: C");
+    } else if(marks>=35) {
+        console.log("Grade: S");
+    } else {
+        console.log("Grade: F");
+    }
+
+    // let result = (condition) ? "answer1" : "answer2";
+    let result = (x>2) ? "Yes" : "No";
+    console.log(result);
+
+    let myResult  = (marks>=75) ? "A" : (marks>=65) ? "B" : (marks>=45) ? "C" : (marks>=35) ? "S" : "F";
+    // console.log("Grade: " + myResult);
+    console.log(`Grade: ${myResult}`);
+
+</script>
+</body>
+</html>
