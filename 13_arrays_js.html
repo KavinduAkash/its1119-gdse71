@@ -16,6 +16,24 @@
 
     let array3 = new Array(1, 2, "hello", true, [1, 2, 3],function() {}, {name:"Kavindu", institute: "IJSE"});
     console.log(array3);
+
+    // [1, 2, 3, 4, 5] -> 0, 1, 2, 3, 4
+
+    array1[0] // 1
+    array1[1] // 2
+    array1[5] // 'Hello'
+    array1[6] //true
+    array1[7] // ƒ () {}
+    array1[8] // {name: 'Kavindu', institute: 'IJSE'}
+
+    console.log(array1[0]);
+
+    // update array items by index
+    array1[2] = 10;
+    array1[4] = "Hi";
+    array1[5] = false;
+
+    console.log(array1.length); // get array lenght
 </script>
 
 </body>
