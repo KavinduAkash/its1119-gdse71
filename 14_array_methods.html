@@ -76,6 +76,8 @@
     b.map(r => { console.log(r); })
     b.map((r, index) => { console.log(`${index} - ${r}`); })
 
+    j.map(r => r); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    j.map(r => r*2); // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
     // filter
     let j = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -89,6 +91,14 @@
         return i%2==0;
     })
     //[2, 4, 6, 8, 10]
+
+
+    // foreach
+    j.forEach(function(item) {
+        console.log(item);
+    })
+
+
 </script>
 </body>
 </html>
