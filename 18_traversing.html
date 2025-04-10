@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<section>
+    <ul>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>
+            <ol>
+                <li>SL</li>
+                <li>UK</li>
+                <li>USA</li>
+            </ol>
+        </li>
+    </ul>
+</section>
+
+
+<script>
+    document.getElementsByTagName("li")
+    document.getElementsByTagName("li")[0]
+    document.getElementsByTagName("li")[1]
+    document.getElementsByTagName("li")[1].parentElement // select parent element
+    document.getElementsByTagName("li")[5]
+    document.getElementsByTagName("li")[5].parentElement
+
+    document.getElementsByTagName("ol");
+    document.getElementsByTagName("ol")[0];
+    document.getElementsByTagName("ol")[0].children; // get children
+    document.getElementsByTagName("ol")[0].children[0]; // get specific child
+    document.getElementsByTagName("ol")[0].children[1];
+    document.getElementsByTagName("ol")[0].children[2];
+
+    document.getElementsByTagName("ol")[0].firstElementChild; // get first child
+    document.getElementsByTagName("ol")[0].lastElementChild; // get last child
+
+    document.getElementsByTagName('ul')
+    document.getElementsByTagName('ul')[0]
+    document.getElementsByTagName('ul')[0].lastElementChild
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.children
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.children[0]
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.children[1]
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.children[2]
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.firstElementChild
+    document.getElementsByTagName('ul')[0].lastElementChild.firstElementChild.lastElementChild
+</script>
+</body>
+</html>
