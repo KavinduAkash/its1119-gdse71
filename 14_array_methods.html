@@ -22,6 +22,40 @@
 
     // shift - remove first item
     myarray.shift() // ['B', 'C', 'D']
+
+    // unshift - add new item to start
+    myarray.unshift("hello"); // ['hello', 'B', 'C', 'D']
+    myarray.unshift(true); //[true, 'hello', 'B', 'C', 'D']
+
+
+    // concat - concat two arrays
+    let myarray2 = [100, 200, 300, 400];
+    let myarray3 = myarray.concat(myarray2); // [true, 'hello', 'B', 'C', 'D', 100, 200, 300, 400]
+
+    // slice - make a shallow copy
+    let x = [1, 2, 3, 40];
+
+    let y = x;
+
+    y[0] = 100; // [100, 2, 3, 40]
+
+    console.log(x); // [100, 2, 3, 40]
+
+    let z = x.slice();
+    z[0] = 2000
+    console.log(z); // [2000, 2, 3, 40]
+
+    console.log(x); // [100, 2, 3, 40]
+
+    let z100 = x.slice(2); // [3, 40]
+
+    let a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    let z200 = a.slice(2, 6); // [30, 40, 50, 60]
+    let z300 = a.slice(-9); // [20, 30, 40, 50, 60, 70, 80, 90, 100]
+    let z400 = a.slice(-3); // [80, 90, 100]
+
+
+
 </script>
 </body>
 </html>
