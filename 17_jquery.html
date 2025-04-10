@@ -12,7 +12,7 @@
 <h2>Welcome to basics</h2>
 <h2>Welcome to advanced</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur distinctio ducimus eius facere in ipsum minus natus numquam praesentium, quasi quia, quibusdam quisquam, reprehenderit similique unde voluptas.</p>
+<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam asperiores consequuntur distinctio ducimus eius facere in ipsum minus natus numquam praesentium, quasi quia, quibusdam quisquam, reprehenderit similique unde voluptas.</p>
 
 <a href="#">Click Me</a>
 <a href="#">Validate</a>
@@ -22,6 +22,17 @@
 <script>
 
 
+    // document.getElementsByTagName("h1")[0].style.background = "yellow";
+    $("h1").css("background", "yellow");
+    $(".description").css("color", "red");
+
+    // var styles = "color: red; background-color: blue;"
+    // document.getElementsByTagName("h1")[0].style.cssText = styles;
+
+    $("a").css({
+        'background': "blue",
+        'font-size': "100px",
+    })
 
 </script>
 
